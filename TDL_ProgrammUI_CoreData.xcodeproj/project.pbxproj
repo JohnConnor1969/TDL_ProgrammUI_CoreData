@@ -13,6 +13,8 @@
 		97E50FB424EFDA3E00A9DE32 /* TDL_ProgrammUI_CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97E50FB224EFDA3E00A9DE32 /* TDL_ProgrammUI_CoreData.xcdatamodeld */; };
 		97E50FB624EFDA4100A9DE32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E50FB524EFDA4100A9DE32 /* Assets.xcassets */; };
 		97E50FB924EFDA4100A9DE32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97E50FB724EFDA4100A9DE32 /* LaunchScreen.storyboard */; };
+		97E50FC224EFDB4E00A9DE32 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E50FC024EFDB4E00A9DE32 /* Task+CoreDataClass.swift */; };
+		97E50FC324EFDB4E00A9DE32 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E50FC124EFDB4E00A9DE32 /* Task+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		97E50FB524EFDA4100A9DE32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97E50FB824EFDA4100A9DE32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97E50FBA24EFDA4100A9DE32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97E50FC024EFDB4E00A9DE32 /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
+		97E50FC124EFDB4E00A9DE32 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		97E50FA824EFDA3E00A9DE32 /* TDL_ProgrammUI_CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				97E50FC624EFDB9D00A9DE32 /* ViewController */,
+				97E50FC524EFDB6900A9DE32 /* Supporting */,
+				97E50FC424EFDB5700A9DE32 /* CoreData */,
+			);
+			path = TDL_ProgrammUI_CoreData;
+			sourceTree = "<group>";
+		};
+		97E50FC424EFDB5700A9DE32 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				97E50FC024EFDB4E00A9DE32 /* Task+CoreDataClass.swift */,
+				97E50FC124EFDB4E00A9DE32 /* Task+CoreDataProperties.swift */,
+				97E50FB224EFDA3E00A9DE32 /* TDL_ProgrammUI_CoreData.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		97E50FC524EFDB6900A9DE32 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
 				97E50FA924EFDA3E00A9DE32 /* AppDelegate.swift */,
 				97E50FAB24EFDA3E00A9DE32 /* SceneDelegate.swift */,
-				97E50FAD24EFDA3E00A9DE32 /* ViewController.swift */,
 				97E50FB524EFDA4100A9DE32 /* Assets.xcassets */,
 				97E50FB724EFDA4100A9DE32 /* LaunchScreen.storyboard */,
 				97E50FBA24EFDA4100A9DE32 /* Info.plist */,
-				97E50FB224EFDA3E00A9DE32 /* TDL_ProgrammUI_CoreData.xcdatamodeld */,
 			);
-			path = TDL_ProgrammUI_CoreData;
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		97E50FC624EFDB9D00A9DE32 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				97E50FAD24EFDA3E00A9DE32 /* ViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +168,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				97E50FB424EFDA3E00A9DE32 /* TDL_ProgrammUI_CoreData.xcdatamodeld in Sources */,
+				97E50FC224EFDB4E00A9DE32 /* Task+CoreDataClass.swift in Sources */,
 				97E50FAE24EFDA3E00A9DE32 /* ViewController.swift in Sources */,
 				97E50FAA24EFDA3E00A9DE32 /* AppDelegate.swift in Sources */,
+				97E50FC324EFDB4E00A9DE32 /* Task+CoreDataProperties.swift in Sources */,
 				97E50FAC24EFDA3E00A9DE32 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,7 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Y3H58KDA5;
-				INFOPLIST_FILE = TDL_ProgrammUI_CoreData/Info.plist;
+				INFOPLIST_FILE = TDL_ProgrammUI_CoreData/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,7 +318,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "id5190011.TDL-ProgrammUI-CoreData";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -296,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Y3H58KDA5;
-				INFOPLIST_FILE = TDL_ProgrammUI_CoreData/Info.plist;
+				INFOPLIST_FILE = TDL_ProgrammUI_CoreData/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "id5190011.TDL-ProgrammUI-CoreData";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
